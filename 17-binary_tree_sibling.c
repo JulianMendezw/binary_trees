@@ -1,18 +1,17 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_full - Function that checks if a binary tree is full
+ * binary_tree_is_full - function that finds the sibling of a node.
  *
- * @tree: Tree to check.
+ * @node: Node to check.
  *
- * Return: 1 if the tree is full, 0 otherwise.
+ * Return: Null or  sibling otherwise.
  */
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (node && node->parent)
 	{
-
 		if (!node->parent->left || !node->parent->right)
 			return (NULL);
 
